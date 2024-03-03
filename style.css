@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke;
+    background-color: #1a1a1c;
+  }
+
+  body {
+    position: fixed;
+    top: 15vh;
+    left: 15vw;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 70vw;
+    overflow-y: scroll;
+  }
+
+  td, th {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  #filter {
+    width: 70vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  #searchInput {
+    width: 40%;
+    height: 70%;
+    outline: none;
+    border: 2px solid #4c4c4d;
+  }
+
+  button {
+    outline: none;
+    border: 2px solid #4c4c4d;
+    padding: 7px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  /* Align specific columns */
+  td:first-child {
+    text-align: left; /* First column aligned to the left */
+  }
+
+  td:last-child {
+    text-align: right; /* Last column aligned to the right */
+  }
+
+  /* Center alignment for other columns */
+  td:not(:first-child):not(:last-child),
+  th:not(:first-child):not(:last-child) {
+    text-align: center;
+  }
